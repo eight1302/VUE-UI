@@ -1,0 +1,118 @@
+.photo{
+	margin: 10px;
+	height: auto;
+}
+.photo ul li {
+	list-style: none;
+	float: left;
+}
+.photo_li{
+	width: 200px;
+	height: 160px;
+	border: 1px solid #eee;
+	margin-right: 10px;
+}
+img{
+	width: 190px;
+    height: 150px;
+    margin: 4px 0 0 4px;
+     cursor: pointer;
+  transition: all 0.6s;
+}
+.li_info img:hover{
+  transform: scale(1.2);
+}
+.li_info{
+	margin-bottom: 15px;
+}
+.li_info:hover{
+	color: #b69ae2;
+}
+.info{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.btu_out{
+	width: 70px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    margin: auto;
+    background: #b993f7;
+    color: #fff;
+    border-radius: 5px;
+}
+p{
+	text-align: center;
+    margin-top: 40px;
+    color: #b993f7;
+}
+.affiche_info{
+    display: block;
+    width: 95%;
+    margin: auto;
+    border: 1px solid #eee;
+    margin-bottom: 17px;
+    height: 150px;
+}
+.infos{
+	width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.delete_affiche{
+	text-align: right;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	color: #ff0000;
+}
+
+.from{
+    height: auto;
+}
+.form_table{
+    margin-bottom: 0px;
+    border-bottom: 1px solid #a390c1;
+}
+.form_table li{
+    list-style: none;
+    float: left;
+}
+.from_affiche,.from_photo{
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: -1px;
+    font-size: 16px;
+}
+.from_affiche:hover,.from_photo:hover{
+    background: #eee;
+    height: 35px;
+
+}
+.form_phad{
+    height: auto;
+}
+.aff_info,.pho_info{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+.labels{
+    text-align: center;
+    font-size: 15px;
+    text-align: right;
+}
+.sever{
+    margin: 10px 0;
+}
+.cancel_btn{
+    width: 80px;
+    height: 25px;
+    background: #a380dc;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+}

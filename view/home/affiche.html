@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/include.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/photo.css">
+</head>
+<title>BLOG</title>
+<body>
+	<section id="blog">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-sm-1 col-xl-12 navbar navbar-default one" role="navigation">
+				<div class="col-md-12 col-sm-12 col-xl-12 container-fluid one"> 
+					<div class="col-md-12 col-sm-12 col-xl-12 navbar-header one">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-12 one" style="height: 90%;">
+				<div class="col-md-12 col-sm-12 col-xl-12 me">
+					<h4 style="padding-bottom: 10px;border-bottom: 1px solid #eee;">公告管理</h4>
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<section class="col-md-12 col-sm-12 col-xl-12 one affiche">
+							<div class="col-md-3 col-sm-3 col-xl-12 one" v-for = "date in affiche">
+								<div class="affiche_info">
+									<div class="title" style="padding-left: 20px;">{{date.name}}<span style="float: right;margin-right: 20px;">{{date.time}}</span></div>
+									<div class="infos">{{date.info}}</div>
+									<div class="delete_affiche">
+										<span class="fa fa-shopping-basket"></span>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;width: 100%;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/pager.js"></script>
+	<script type="text/javascript" src="../../js/person.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+</html>

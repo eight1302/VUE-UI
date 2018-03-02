@@ -1,0 +1,154 @@
+.me{
+	margin-top: 10px;
+}
+.experience_div{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+.experience{
+    height: 140px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #e9ecf1;
+}
+.icon_div{
+   background-color: #ddd;
+    color: #333;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 100%;
+    line-height: 50px;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.icon_div_a{
+    text-decoration: none;
+    color: #5eb95e;
+}
+.icon_div_a:hover{
+    color: red;
+}
+.experiences{
+    margin-top: 10px;
+    height: 215px;
+    overflow: auto;
+    border: 1px solid #eae5e5;
+}
+thead{
+    border-bottom: 1px solid #f7f3f3;
+    font-size: 16px;
+}
+tbody{
+    font-size: 14px;
+}
+tr{
+    height: 35px;
+    line-height: 35px;
+}
+tr:nth-child(2n){
+    background: #f9f9f9;
+}
+.seccess{
+    width: 45px;
+    height: 20px;
+    background: #90cc4b;
+    color: #fff;
+    line-height: 20px;
+}
+.edit{
+    font-size: 16px;
+    color: #90cc4b;
+}
+.delete{
+    font-size: 16px;
+    color: #ff0000;
+}
+.tast_edit{
+    position: fixed;
+    display: block;
+    float: right;
+    top: 65px;
+    right: 0;
+    z-index: 10;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+}
+.title{
+    height: 40px;
+    line-height: 40px;
+    background: #a380dc;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.two{
+    padding-left: 40px;
+}
+.three{
+    text-align: right;
+    padding-right: 40px;
+}
+.four{
+    margin: 10px 0;
+}
+.up_btn,.cancel_btn{
+    width: 80px;
+    height: 25px;
+    background: #a380dc;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+}
+
+.count{
+    margin-top: 15px;
+}
+.count section{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    border: 1px solid #eee;
+}
+.browser,.message{
+    height: 40px;
+    background: #eee;
+    line-height: 40px;
+    color: #8977a7;
+}
+.down{
+    float: right;
+    line-height: 40px;
+}
+.browser_info,.message_info{
+    height: 360px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.browsers{
+    height: 50px;
+    line-height: 50px;
+}
+.uers_cont{
+    height: 130px;
+    margin: 10px 0;
+}
+.user_img{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+}
+.discuss{
+    background: #eee;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.discuss_info{
+    height: 80px;
+    border: 1px solid #eee;
+    padding-top: 16px;
+    padding-left: 15px; 
+}
+

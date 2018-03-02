@@ -1,0 +1,33 @@
+.person{
+	width: 80%;
+	margin: auto;
+	height: auto;
+}
+.ten_1{
+	margin: 15px 0;
+}
+.nine{
+	width: 75%;
+    height: 35px;
+    line-height: 35px;
+    margin: 15px 0;
+}
+.eight{
+	margin: 15px 0;
+}
+.hear_img{
+	height: 200px;
+	border: 1px solid #eee;
+}
+img{
+    width: 60%;
+    height: 80%;
+    margin-top: 35px;
+    margin-left: 25%;
+    border: 1px solid #eee;
+}
+.file{
+	margin-top: 10%;
+	font-size: 15px;
+	font-family: 
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+		<link rel="stylesheet" type="text/css" href="../../styles/include.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/person.css">
+</head>
+<title>BLOG</title>
+<body>
+	<section id="blog">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-sm-1 col-xl-12 navbar navbar-default one" role="navigation">
+				<div class="col-md-12 col-sm-12 col-xl-12 container-fluid one"> 
+					<div class="col-md-12 col-sm-12 col-xl-12 navbar-header one">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-12 one" style="height: 90%;">
+				<div class="col-md-12 col-sm-12 col-xl-12 me">
+					<h4 style="padding-bottom: 10px;border-bottom: 1px solid #eee;">个人资料</h4>
+					<div class="col-md-12 col-sm-12 col-xl-12 one">
+						<div class="col-md-7 col-sm-7 col-xl-7 one">
+							<section class="person">
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="name" class="col-md-3 col-sm-3 col-xl-3 eight">姓名 / NAME</label>
+									<input type="text" name="" id="name" placeholder="姓名 / NAME" class="col-md-9 col-sm-9 col-xl-9 nine">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="email" class="col-md-3 col-sm-3 col-xl-3 eight">电子邮件 / Email</label>
+									<input type="text" name="" id="email" placeholder="电子邮件 / Email" class="col-md-9 col-sm-9 col-xl-9 nine">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="telephone" class="col-md-3 col-sm-3 col-xl-3 eight">电话 / Telephone</label>
+									<input type="text" name="" id="telephone" placeholder="电话 / Telephone" class="col-md-9 col-sm-9 col-xl-9 nine">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="qq" class="col-md-3 col-sm-3 col-xl-3 eight">QQ</label>
+									<input type="text" name="" id="qq" placeholder="姓名 / NAME" class="col-md-9 col-sm-9 col-xl-9 nine">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="twitter" class="col-md-3 col-sm-3 col-xl-3 eight">微博 / Twitter</label>
+									<input type="text" name="" id="twitter" placeholder="姓名 / NAME" class="col-md-9 col-sm-9 col-xl-9 nine">
+								</div>
+								<div class="col-md-12 col-sm-12 col-xl-12" class="ten_1">
+									<label for="twitter" class="col-md-3 col-sm-3 col-xl-3 eight">简介 / Intro</label>
+									<textarea id="twitter" placeholder="姓名 / NAME" class="col-md-9 col-sm-9 col-xl-9 nine" style="resize : none;height: 79px;"></textarea>
+								</div>
+								<dir class="col-md-12 col-sm-12 col-xl-12">
+									<div class="up_btn">提交</div>
+								</dir>
+							</section>
+						</div>
+						<div class="col-md-5 col-sm-5 col-xl-5 one">
+							<div class="col-md-12 col-sm-12 col-xl-12 one hear_img">
+								<div class="col-md-4 col-sm-4 col-xl-4">
+									<div class="img">
+										<img src="../../imgs/dm.jpg" >
+									</div>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xl-8">
+									<div class="col-md-12 col-sm-12 col-xl-12 file">
+										<span style="font-size: 15px;">你可以使用以提供的头像或者使用本地上传头像。</span><br>
+										<input type="file" name="" id="file" style="margin: 15px 0;">
+									</div>
+									<dir class="col-md-12 col-sm-12 col-xl-12">
+										<div class="up_btn">提交</div>
+									</dir>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 one">
+								<div class="col-md-12 col-sm-12 col-xl-12 one hear_img" style="margin-top: 15px;">
+									<div class="col-md-12 col-sm-12 col-xl-12" style="margin-top: 25px;">
+										<span>等级信息</span>
+										<div class="progress" style="margin-bottom: 5px;">
+											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;background: #a380dc;">
+												<span class="sr-only">40% 完成</span>
+											</div>
+										</div>
+										<span>当前等级：LV8 活跃天数：587 距离下一级别：160</span>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xl-12" style="margin-top: 10px;">
+										<span>等级信息</span>
+										<div class="progress" style="margin-bottom: 5px;">
+											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;background: #8BC34A">
+												<span class="sr-only">40% 完成</span>
+											</div>
+										</div>
+										<span>当前等级：LV8 活跃天数：587 距离下一级别：160</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;width: 100%;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/pager.js"></script>
+	<script type="text/javascript" src="../../js/person.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+</html>

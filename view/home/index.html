@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/include.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/page.css">
+	<link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+<title>BLOG</title>
+<body>
+	<section id="blog">
+		<header></header>
+		<div class="col-md-12 col-sm-12 col-xl-12 one main">
+			<nav class="col-md-1 col-sm-1 col-xl-12 navbar navbar-default one" role="navigation">
+				<div class="col-md-12 col-sm-12 col-xl-12 container-fluid one"> 
+					<div class="col-md-12 col-sm-12 col-xl-12 navbar-header one">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section class="col-md-11 col-sm-11 col-xl-12 one" style="height: 90%;">
+				<div class="col-md-12 col-sm-12 col-xl-12 me">
+					<h4>首页</h4>
+					<div class="col-md-12 col-sm-12 col-xl-12 experience">
+						<div class="col-md-3 col-sm-3 col-xl-12" v-for="date in my_details">
+							<section class="experience_div">
+								<a class="icon_div_a">
+									<div class="icon_div">
+										<span :class="[date.fa]"></span>
+									</div>
+									<span style="font-size: 15px;">{{date.name}}</span><br>
+									<span style="font-size: 15px;">{{date.new_tab}}</span>
+								</a>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xl-12 experiences one">
+						<table class="col-md-12 col-sm-12 col-xl-12 one">
+							<thead>
+					            <tr>
+					              	<th class="col-md-1 col-sm-1 col-xl-1">ID</th>
+									<th class="col-md-3 col-sm-3 col-xl-3">用户名</th>
+									<th class="col-md-3 col-sm-3 col-xl-3">最后成交任务</th>
+									<th class="col-md-3 col-sm-3 col-xl-3">成交订单</th>
+									<th class="col-md-2 col-sm-2 col-xl-2">管理</th>
+					            </tr>
+					        </thead>
+							<tbody>
+								<tr v-for="date in task">
+					              	<td class="col-md-1 col-sm-1 col-xl-1 id">{{date.id}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3 name">{{date.name}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3 last">{{date.last}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3">
+										<div class="seccess">+{{date.seccess}}</div>
+									</td>
+									<td class="col-md-2 col-sm-2 col-xl-2" style="font-size:16px;">
+										<span class="fa fa-pencil-square-o edit" title="编辑"></span>&nbsp;/&nbsp;
+										<span class="fa fa-shopping-basket delete" title="删除"></span>
+									</td>
+					            </tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xl-4 one tast_edit">
+						<div class="col-md-12 col-sm-12 col-xl-12 one title">
+							<div class="col-md-6 col-sm-6 col-xl-6 one two">修改任务信息</div>
+							<div class="col-md-6 col-sm-6 col-xl-6 one three out">返回</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xl-12 one" style="padding-left: 50px;">
+							<div class="col-md-12 col-sm-12 col-xl-12 one four">
+								<label class="col-md-2 col-sm-2 col-xl-2 one" for="id">ID：</label>
+								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="id">
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 one four">
+								<label class="col-md-2 col-sm-2 col-xl-2 one" for="name">用户名：</label>
+								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="name">
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 one four">
+								<label class="col-md-2 col-sm-2 col-xl-2 one" for="last_tast">完成任务：</label>
+								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="last_tast">
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 one four">
+								<label class="col-md-2 col-sm-2 col-xl-2 one" for="order">成交订单：</label>
+								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="order">
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 four up_btn">提交</div>
+						</div>		
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-12 col-xl-12 one count">
+					<div class="col-md-6 col-sm-6 col-xl-6">
+						<section>
+							<div class="col-md-12 col-sm-12 col-xl-12 browser">浏览器统计
+								<span class="fa fa-chevron-down down" style="line-height: 40px;"></span>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 browser_info">
+								<table class="col-md-12 col-sm-12 col-xl-12 one">
+									<tbody>
+										<tr v-for="date in browser" class="browsers">
+							              	<td class="col-md-2 col-sm-2 col-xl-2">
+							              		<img v-bind:src="[date.img]">
+							              	</td>
+											<td class="col-md-8 col-sm-8 col-xl-8">{{date.name}}</td>
+											<td class="col-md-2 col-sm-2 col-xl-2">{{date.last}}</td>
+							            </tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xl-6">
+						<section>
+							<div class="col-md-12 col-sm-12 col-xl-12 message" >最近留言
+								<span class="fa fa-chevron-down down" style="line-height: 40px;"></span>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 message_info">
+								<div class="col-md-12 col-sm-12 col-xl-12 uers_cont" v-for="date in massage">
+									<div class="col-md-2 col-sm-2 col-xl-2 one" style="margin-top: 20px;">
+										<img v-bind:src="[date.img]" class="user_img" style="width: 100px;height: 100px;border-radius: 100%;">
+									</div>
+									<div class="col-md-10 col-sm-10 col-xl-10 one">
+										<div class="col-md-12 col-sm-12 col-xl-12 one">
+											<div class="col-md-12 col-sm-12 col-xl-12 one discuss">{{date.name}}</div>
+											<div class="col-md-12 col-sm-12 col-xl-12 one discuss_info" style="padding-top: 10px;">{{date.last}}</div>
+										</div>
+									</div>
+								</div>
+								<div class="page-left"></div> 
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="col-md-12 col-sm-12 col-xl-12 one" style="position: fixed;width: 100%;"></footer>
+	</section>
+</body>
+	<script type="text/javascript" src="../../js/vue.js"></script>
+	<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/pager.js"></script>
+	<script type="text/javascript" src="../../js/nav.js"></script>
+	<script type="text/javascript" src="../../js/include.js"></script>
+	<script type="text/javascript" src="../../js/page.js"></script>
+</html>

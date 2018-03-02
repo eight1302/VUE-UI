@@ -1,0 +1,15 @@
+<div class="col-md-12 col-sm-12 col-xl-12 container-fluid one" id="nav"> 
+	<div class="col-md-12 col-sm-12 col-xl-12 navbar-header one">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+		</ul>
+	</div>
+</div>
