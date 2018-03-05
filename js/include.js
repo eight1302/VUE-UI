@@ -90,7 +90,7 @@ $(function(){
       $(".form_aff_info").hide();
       $(".form_pho_info").show();
       $(".form_pho_info").css("width",'0px');  
-      $(".form_pho_info").animate({width:'100%',height:'auto'},100);  
+      $(".form_pho_info").animate({width:'100%',height:'auto'},50);  
     });
     $(".from_affiche").on("click",function(){
       $(".from_photo").css({"border":"none"});
@@ -98,7 +98,7 @@ $(function(){
       $(".form_pho_info").hide();
       $(".form_aff_info").show();
       $(".form_aff_info").css("width",'0px');  
-      $(".form_aff_info").animate({width:'100%',height:'auto'},100);  
+      $(".form_aff_info").animate({width:'100%',height:'auto'},50);  
     });
 
 })
