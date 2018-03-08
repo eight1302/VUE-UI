@@ -47,8 +47,8 @@ $(function(){
     }
 
     //相册手机适配
-    if($(window).width() == 414){
-      $(".li_info").css({"margin-left": "25%"});
+    if($(window).width() <= 414){
+      $(".li_info").css({"margin-left": "22%"});
     }
     
 
