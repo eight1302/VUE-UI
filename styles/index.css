@@ -5,9 +5,10 @@
     width: 100px;
     height: auto;
     margin: auto;
+    margin-bottom: 20px;
 }
 .experience{
-    height: 140px;
+    height: auto;
     text-align: center;
     padding: 0;
     border: 1px solid #e9ecf1;
@@ -32,9 +33,12 @@
 }
 .experiences{
     margin-top: 10px;
-    height: 215px;
+    height: auto;
     overflow: auto;
     border: 1px solid #eae5e5;
+}
+table{
+    width: 100%;
 }
 thead{
     border-bottom: 1px solid #f7f3f3;
@@ -110,6 +114,7 @@ tr:nth-child(2n){
     margin: auto;
     height: auto;
     border: 1px solid #eee;
+    margin-bottom: 10px;
 }
 .browser,.message{
     height: 40px;
@@ -122,22 +127,23 @@ tr:nth-child(2n){
     line-height: 40px;
 }
 .browser_info,.message_info{
-    height: 360px;
+    height: auto;
     border: 1px solid #eee;
-    overflow: hidden;
+    overflow: auto;
 }
 .browsers{
     height: 50px;
     line-height: 50px;
 }
 .uers_cont{
-    height: 130px;
+    height: auto;
     margin: 10px 0;
 }
 .user_img{
-    width: 50%;
-    height: 50%;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
+    margin-bottom: 10px;
 }
 .discuss{
     background: #eee;
@@ -146,9 +152,10 @@ tr:nth-child(2n){
     padding-left: 15px;
 }
 .discuss_info{
-    height: 80px;
+    height: auto;
     border: 1px solid #eee;
     padding-top: 16px;
+    padding-bottom: 10px;
     padding-left: 15px; 
 }
 

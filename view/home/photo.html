@@ -27,12 +27,17 @@
 					</div>
 					<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+							<li class="ten" v-for="date in news" >
+								<a :href="[date.new_tab]" class="five">
+									<span :class="[date.fa]">&nbsp;&nbsp;</span>
+									<span class="menu_ul">{{date.name}}</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<section class="col-md-11 col-sm-11 col-xl-12 one" style="height: 90%;">
+			<section class="col-md-11 col-sm-11 col-xl-12 one footer_st">
 				<div class="col-md-12 col-sm-12 col-xl-12 me">
 					<h4 style="padding-bottom: 10px;border-bottom: 1px solid #eee;">相册 / Gallery</h4>
 					<div class="col-md-12 col-sm-12 col-xl-12 one">

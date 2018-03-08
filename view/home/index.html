@@ -27,12 +27,17 @@
 					</div>
 					<div class=" col-md-12 col-sm-12 col-xl-12collapse navbar-collapse one" id="example-navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li class="ten" v-for="date in news" ><a :href="[date.new_tab]" class="five"><span :class="[date.fa]">&nbsp;&nbsp;</span>{{date.name}}</a></li>
+							<li class="ten" v-for="date in news" >
+								<a :href="[date.new_tab]" class="five">
+									<span :class="[date.fa]">&nbsp;&nbsp;</span>
+									<span class="menu_ul">{{date.name}}</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
-			<section class="col-md-11 col-sm-11 col-xl-12 one" style="height: 90%;">
+			<section class="col-md-11 col-sm-11 col-xl-12 one footer_st">
 				<div class="col-md-12 col-sm-12 col-xl-12 me">
 					<h4>首页</h4>
 					<div class="col-md-12 col-sm-12 col-xl-12 experience">
@@ -52,19 +57,19 @@
 						<table class="col-md-12 col-sm-12 col-xl-12 one">
 							<thead>
 					            <tr>
-					              	<th class="col-md-1 col-sm-1 col-xl-1">ID</th>
-									<th class="col-md-3 col-sm-3 col-xl-3">用户名</th>
-									<th class="col-md-3 col-sm-3 col-xl-3">最后成交任务</th>
-									<th class="col-md-3 col-sm-3 col-xl-3">成交订单</th>
-									<th class="col-md-2 col-sm-2 col-xl-2">管理</th>
+					              	<th class="col-md-1 col-sm-1 col-xl-1 one">ID</th>
+									<th class="col-md-3 col-sm-3 col-xl-3 one">用户名</th>
+									<th class="col-md-3 col-sm-3 col-xl-3 one">最后成交任务</th>
+									<th class="col-md-3 col-sm-3 col-xl-3 one">成交订单</th>
+									<th class="col-md-2 col-sm-2 col-xl-2 one">管理</th>
 					            </tr>
 					        </thead>
 							<tbody>
 								<tr v-for="date in task">
-					              	<td class="col-md-1 col-sm-1 col-xl-1 id">{{date.id}}</td>
-									<td class="col-md-3 col-sm-3 col-xl-3 name">{{date.name}}</td>
-									<td class="col-md-3 col-sm-3 col-xl-3 last">{{date.last}}</td>
-									<td class="col-md-3 col-sm-3 col-xl-3">
+					              	<td class="col-md-1 col-sm-1 col-xl-1 one id">{{date.id}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3 one name">{{date.name}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3 one last">{{date.last}}</td>
+									<td class="col-md-3 col-sm-3 col-xl-3 one">
 										<div class="seccess">+{{date.seccess}}</div>
 									</td>
 									<td class="col-md-2 col-sm-2 col-xl-2" style="font-size:16px;">
@@ -75,12 +80,12 @@
 							</tbody>
 						</table>
 					</div>
-					<div class="col-md-4 col-sm-4 col-xl-4 one tast_edit">
+					<div class="col-md-6 col-sm-6 col-xl-12 one tast_edit">
 						<div class="col-md-12 col-sm-12 col-xl-12 one title">
-							<div class="col-md-6 col-sm-6 col-xl-6 one two">修改任务信息</div>
-							<div class="col-md-6 col-sm-6 col-xl-6 one three out">返回</div>
+							<span class="col-md-6 col-sm-6 col-xl-6 one two">修改任务信息</span>
+							<span class="col-md-6 col-sm-6 col-xl-6 one three out">返回</span>
 						</div>
-						<div class="col-md-12 col-sm-12 col-xl-12 one" style="padding-left: 50px;">
+						<div class="col-md-12 col-sm-12 col-xl-12 one">
 							<div class="col-md-12 col-sm-12 col-xl-12 one four">
 								<label class="col-md-2 col-sm-2 col-xl-2 one" for="id">ID：</label>
 								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="id">
@@ -97,7 +102,7 @@
 								<label class="col-md-2 col-sm-2 col-xl-2 one" for="order">成交订单：</label>
 								<input class="col-md-9 col-sm-9 col-xl-9 one" type="text" name="" id="order">
 							</div>
-							<div class="col-md-12 col-sm-12 col-xl-12 four up_btn">提交</div>
+							<div class="col-md-12 col-sm-12 col-xl-12 four up_btn" style="margin-left: 20px;">提交</div>
 						</div>		
 					</div>
 				</div>
@@ -107,15 +112,15 @@
 							<div class="col-md-12 col-sm-12 col-xl-12 browser">浏览器统计
 								<span class="fa fa-chevron-down down" style="line-height: 40px;"></span>
 							</div>
-							<div class="col-md-12 col-sm-12 col-xl-12 browser_info">
+							<div class="col-md-12 col-sm-12 col-xl-12 browser_info one" style="height: 302px;overflow: auto;">
 								<table class="col-md-12 col-sm-12 col-xl-12 one">
 									<tbody>
 										<tr v-for="date in browser" class="browsers">
-							              	<td class="col-md-2 col-sm-2 col-xl-2">
+							              	<td class="col-md-2 col-sm-2 col-xl-2 one">
 							              		<img v-bind:src="[date.img]">
 							              	</td>
-											<td class="col-md-8 col-sm-8 col-xl-8">{{date.name}}</td>
-											<td class="col-md-2 col-sm-2 col-xl-2">{{date.last}}</td>
+											<td class="col-md-8 col-sm-8 col-xl-8 one">{{date.name}}</td>
+											<td class="col-md-2 col-sm-2 col-xl-2 one">{{date.last}}</td>
 							            </tr>
 									</tbody>
 								</table>
@@ -127,15 +132,15 @@
 							<div class="col-md-12 col-sm-12 col-xl-12 message" >最近留言
 								<span class="fa fa-chevron-down down" style="line-height: 40px;"></span>
 							</div>
-							<div class="col-md-12 col-sm-12 col-xl-12 message_info">
+							<div class="col-md-12 col-sm-12 col-xl-12 message_info" style="height: 302px;overflow: auto;">
 								<div class="col-md-12 col-sm-12 col-xl-12 uers_cont" v-for="date in massage">
-									<div class="col-md-2 col-sm-2 col-xl-2 one" style="margin-top: 20px;">
-										<img v-bind:src="[date.img]" class="user_img" style="width: 100px;height: 100px;border-radius: 100%;">
+									<div class="col-md-2 col-sm-12 col-xl-12 one">
+										<img v-bind:src="[date.img]" class="user_img">
 									</div>
-									<div class="col-md-10 col-sm-10 col-xl-10 one">
+									<div class="col-md-10 col-sm-12 col-xl-12 one">
 										<div class="col-md-12 col-sm-12 col-xl-12 one">
 											<div class="col-md-12 col-sm-12 col-xl-12 one discuss">{{date.name}}</div>
-											<div class="col-md-12 col-sm-12 col-xl-12 one discuss_info" style="padding-top: 10px;">{{date.last}}</div>
+											<div class="col-md-12 col-sm-12 col-xl-12 one discuss_info" style="padding-top: 10px;padding-bottom: 10px;">{{date.last}}</div>
 										</div>
 									</div>
 								</div>

@@ -79,7 +79,7 @@ nav{
     padding-left: 13px;
 }
 .ten:hover{
-	background: #a587d4;
+	background: #a587d4;height: 90%;    margin-bottom: 10px;
     color: #fff;
 }
 /*nav结束*/
@@ -93,4 +93,14 @@ footer{
     line-height: 30px;
     background: #000;
     opacity: 0.5;
+}
+.footer_st{
+    height: 90%;    
+    margin-bottom: 10px;
+}
+.out{
+    padding-right: 20px;
+}
+label{
+    text-align: right;
 }

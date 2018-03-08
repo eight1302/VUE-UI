@@ -2,6 +2,7 @@
 	width: 80%;
 	margin: auto;
 	height: auto;
+	margin-bottom: 10px;
 }
 .ten_1{
 	margin: 15px 0;
@@ -16,8 +17,9 @@
 	margin: 15px 0;
 }
 .hear_img{
-	height: 200px;
+	height: auto;
 	border: 1px solid #eee;
+	padding-bottom: 10px;
 }
 img{
     width: 60%;

@@ -14,6 +14,38 @@ $(function(){
 		$(this).addClass("active").siblings().removeClass("active");	
 	})
 
+  //导航收起
+    if( $(window).width() < 768 ) {
+      /* 这里是要执行的代码 */
+      $(".navbar-nav").hide();
+      $(".navbar-toggle").on('click',function(){
+        $(".navbar-nav").show();
+      });
+      $(".user_img").css("margin-left","25%")
+    }else{
+      $(".navbar-nav").show();
+    }
+
+    if($(".navbar-header").width()>130){
+      $(".navbar-nav").find(".menu_ul").show();
+    }else{
+      $(".navbar-nav").find(".menu_ul").hide();
+      $(".navbar-nav").css("text-align","center");
+    }
+    //隐藏菜单
+   if($(window).width() <= 1024 && $(window).width() > 800){
+      $(".tast_edit").css("width","800px");
+    }else if($(window).width() <= 800){
+      $(".tast_edit").css("width","100%");
+    }
+
+    //首页评论ipad pro
+    if($(window).width() == 1024){
+      $(".user_img").css({"width": "60px","height": "60px","margin-top": "40px"});
+    }else if($(window).width() < 1024){
+      $(".user_img").css({"width": "60px","height": "60px","margin-left": "35%"});
+    }
+    
 
 	 //启用滚动条
 	$(document.body).css({"overflow-x":"auto","overflow-y":"auto"});
