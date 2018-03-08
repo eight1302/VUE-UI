@@ -45,7 +45,10 @@ $(function(){
     }else if($(window).width() < 1024){
       $(".user_img").css({"width": "60px","height": "60px","margin-left": "35%"});
     }
-    
+    //相册手机适配
+    if($(window).width() == 414){
+      $(".li_info").css({"margin-left": "25%"});
+    }
 
 	 //启用滚动条
 	$(document.body).css({"overflow-x":"auto","overflow-y":"auto"});
