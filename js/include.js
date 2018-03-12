@@ -54,32 +54,6 @@ $(function(){
 
 	 //启用滚动条
 	$(document.body).css({"overflow-x":"auto","overflow-y":"auto"});
-     //退出页面全屏
-	function fullscreen() {
-	    var docElm = document.documentElement;
-	    if (docElm.requestFullscreen) {
-		docElm.requestFullscreen();
-	    } else if (docElm.mozRequestFullScreen) {
-		docElm.mozRequestFullScreen();
-	    } else if (docElm.webkitRequestFullScreen) {
-		docElm.webkitRequestFullScreen();
-	    } else if (docElm.msRequestFullscreen) {
-		docElm.msRequestFullscreen();
-	    }
-	}
-
-	// 退出全屏
-	function exitFullscreen() {
-	    if (document.exitFullscreen) {
-		document.exitFullscreen();
-	    } else if (document.mozCancelFullScreen) {
-		document.mozCancelFullScreen();
-	    } else if (document.webkitCancelFullScreen) {
-		document.webkitCancelFullScreen();
-	    } else if (document.msExitFullscreen) {
-		document.msExitFullscreen();
-	    }
-	}
 
     //隐藏首页的任务弹出页
     $(".tast_edit").hide();
@@ -140,3 +114,30 @@ $(function(){
     });
 
 })
+
+//退出页面全屏
+	function fullscreen() {
+	    var docElm = document.documentElement;
+	    if (docElm.requestFullscreen) {
+		docElm.requestFullscreen();
+	    } else if (docElm.mozRequestFullScreen) {
+		docElm.mozRequestFullScreen();
+	    } else if (docElm.webkitRequestFullScreen) {
+		docElm.webkitRequestFullScreen();
+	    } else if (docElm.msRequestFullscreen) {
+		docElm.msRequestFullscreen();
+	    }
+	}
+
+	// 退出全屏
+	function exitFullscreen() {
+	    if (document.exitFullscreen) {
+		document.exitFullscreen();
+	    } else if (document.mozCancelFullScreen) {
+		document.mozCancelFullScreen();
+	    } else if (document.webkitCancelFullScreen) {
+		document.webkitCancelFullScreen();
+	    } else if (document.msExitFullscreen) {
+		document.msExitFullscreen();
+	    }
+	}
